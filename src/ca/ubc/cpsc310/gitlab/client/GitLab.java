@@ -45,6 +45,12 @@ public class GitLab implements EntryPoint {
 	 */
 	public void onModuleLoad() {
 	
+		List<IUser> users = new ArrayList<IUser>();
+		User user = new User();
+		user.setName("Alex Anderson");
+		user.setLanguage("FR");
+		users.add(user);
+		displayUsers(users);
 
 		
 	}
